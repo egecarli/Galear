@@ -1,0 +1,9 @@
+/* <svg fill="#fff" width="140" height="64" viewBox="0 0 140 64" xmlns="http://www.w3.org/2000/svg"> */
+
+.photoProfile{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 100px;
+}
