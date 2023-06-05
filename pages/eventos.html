@@ -13,41 +13,54 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html">
-                <img src="" alt="logo">
+            <a href="/index.html" id="logo">
+                <img src="/assets/logo1.svg" alt="logo">
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="/pages/sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="/pages/eventos.html">Eventos</a></li>
                 <li><a href="/pages/artistas.html">Artistas</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
-            <a href="perfil.html">Login</a>
+            <a href="perfil.html" id="login">Ingresar</a>
         </nav>
     </header>
     <main>
-        <h1>Eventos</h1>
-
-        <div class="contain-exposures">
-            <section class="head-exposures">
-
+        <section class="subbanner">
+            <h1 >Eventos</h1>
+        </section>
+    <div class="contain-exposures">
+            <section class="filters">
+                <input type="search" name="filters" id="searchFilter">
+                <select name="forDate" id="forDate">fechas
+                    <option value="semana">última semana</option>
+                    <option value="mes">último mes</option>
+                    <option value="sugerencias">Sugerencias</option>
+                </select>
+                <select name="forCategory" id="forCategory">Por categoría
+                    <option value="pinturas">Pinturas</option>
+                    <option value="esculturas">Esculturas</option>
+                    <option value="conceptual">Conceptual</option>
+                </select>
             </section>
-
-            <div class="exposuresTest" id="june">
-                <template id="testTemplate" class="template">
+            <div class="exposuresTest">
+                <template id="templateEvents" class="eventsCards" style="display:none">
                     <article>
-                        <a href="">
-                            <h1></h1>
+                        <div class="imgEvent"></div>
+                        <div class="tittleAP">
+                        <a href="" class="tittleEvents">
+                        <h1></h1>
                         </a>
-                        <img src="" alt="">
                         <p></p>
+                        </div>
                         <h3></h3>
                     </article>
                 </template>
             </div>
+        </div>
     </main>
     <footer></footer>
-    <script src="/scripts/exposures.mjs" type="module"></script>
+    <script src="/scripts/exposures.mjs"></script>
 
 
 </body>

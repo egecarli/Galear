@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/register.css">
+    <link rel="stylesheet" href="/styles/perfil.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>GaleArt</title>
 </head>
@@ -13,30 +13,39 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html">
-                <img src="" alt="logo">
+            <a href="/index.html" id="logo">
+                <img src="/assets/logo1.svg" alt="logo">
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="/pages/sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="/pages/eventos.html">Eventos</a></li>
                 <li><a href="/pages/artistas.html">Artistas</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
-            <a href="perfil.html">Login</a>
+            <a href="perfil.html" id="login">Ingresar</a>
         </nav>
     </header>
+    </header>
     <main>
-        <h1>Perfil</h1>
-        <div class="profile">
-            <section id="proileEdit">
+        <div class="dataprofile">
+            <section class="profileEdit">
                 <div class="photoProfile"></div>
-                <a href="">editar perfil</a>
+                <a href="#editarPerfil" class="editProfile">editar perfil</a>
             </section>
-            <section id="dataUserProfile">
+            <section id="dataUserProfile" class="dataProfileUser">
+            </section>
+            
+            <section id="editarPerfil">
+                <div class="hiddenForm">
+                    <form>
+                        <input type="text" name="" id="">
+                        <input type="text">
+                        <input type="number" name="" id="">
+                    </form>
+                </div>
             </section>
         </div>
     </main>
-    <footer></footer>
     <script src="/scripts/perfil.mjs" type="module"></script>
 </body>
 
