@@ -1,6 +1,11 @@
-let exposureSelect = JSON.parse(localStorage.getItem('exposureSelect'));
+let exposureSelect = JSON.parse(localStorage.getItem('eventsData'));
+const eventTarget = document.getElementById('eventTarget');
+eventTarget.innerHTML = exposureSelect;
 
-const divRegister = document.getElementById('divExposure')
+const btn_openForm = document.getElementById('openForm');
+const btn_closeForm = document.getElementById('closeForm');
+const form_open = document.querySelector('#form_register')
+
 const nameForm = document.getElementById('name');
 const lastNameForm = document.getElementById('lastName');
 const emailForm = document.getElementById('email');
@@ -11,8 +16,7 @@ const conctacNumber = document.getElementById('contactNum')
 const formRegister = document.getElementById('form_register');
 const errorForm = document.getElementById('error')
 
-divRegister.innerHTML = exposureSelect;
-
+//validations
 
 formRegister.addEventListener('submit', (e) => {
     e.preventDefault()

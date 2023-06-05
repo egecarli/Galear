@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/register.css">
     <link rel="stylesheet" href="/styles/index.css">
     <title>GaleArt</title>
 </head>
@@ -12,52 +13,59 @@
 <body>
     <header>
         <nav>
-            <a href="/index.html">
-                <img src="" alt="logo">
+            <a href="/index.html" id="logo">
+                <img src="/assets/logo1.svg" alt="logo">
             </a>
-            <ul>
+            <ul class="menu">
                 <li><a href="/pages/sobrenosotros.html">Sobre nosotros</a></li>
                 <li><a href="/pages/eventos.html">Eventos</a></li>
                 <li><a href="/pages/artistas.html">Artistas</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
-            <a href="perfil.html">Login</a>
+            <a href="perfil.html" id="login">Ingresar</a>
         </nav>
     </header>
     <main>
-        <h1>registro</h1>
-        <div class="toRegister" id="divExposure">
-        </div>
-        <div class="form_register">
-            <form class="register_events" id="form_register">
-                <label>
-                    <h2>Formulario de reserva, a continuación ingrese sus datos:</h2>
-                </label>
-                <label> Nombre:
-                    <input type="text" placeholder="Ingrese su nombre" title="El nombre es requerido" id="name"
-                        required>
-                </label>
-                <label> Apellido:
-                    <input type="text" placeholder="Ingrese su apellido" title="Ups, falta el apellido" id="lastName"
-                        required>
-                </label>
-                <label> Email:
-                    <input type="email" placeholder="Ingrese su email" title="su email" id="email" required>
-                </label>
-                <label>Número de contacto:
-                    Cod área: <input type="tel" name="codArea" id="codArea" min="3" max="4" placeholder="011">
-                    <span></span>
-                    Número: <input type="tel" name="numeroDeContacto" id="contactNum" placeholder="00000000" min="8" max="8">
-                </label>
-                <label> Cantidad de personas que asistiran al evento:
-                    <input type="number" value="1" placeholder="Cantidad de personas" id="friends" required>
-                </label>
-                <label> Desea usar los datos para el registro a GaleArt?:
-                    <input type="checkbox" name="register" value="yes" id="login_question">
-                </label>
-                <input type="submit" value="Enviar" id="input_submit">
-                <p id="error"></p>
-            </form>
+        <section class="subbanner">
+            <h1>Registro</h1>
+        </section>
+
+        <div class="containRegister">
+            <div class="toRegister" id="eventTarget"></div>
+            <button class="btn_open" id="openForm">¡Quiero ir!</button>
+            <dialog id="form_register" class="formOpen">
+                <form class="register_events" id="form_register">
+                    <label>
+                        <h2>Formulario de reserva, a continuación ingrese sus datos:</h2>
+                    </label>
+                    <label> Nombre:
+                        <input type="text" placeholder="Ingrese su nombre" title="El nombre es requerido" id="name"
+                            required>
+                    </label>
+                    <label> Apellido:
+                        <input type="text" placeholder="Ingrese su apellido" title="Ups, falta el apellido"
+                            id="lastName" required>
+                    </label>
+                    <label> Email:
+                        <input type="email" placeholder="Ingrese su email" title="su email" id="email" required>
+                    </label>
+                    <label>Número de contacto:
+                        Cod área: <input type="tel" name="codArea" id="codArea" min="3" max="4" placeholder="011">
+                        <span></span>
+                        Número: <input type="tel" name="numeroDeContacto" id="contactNum" placeholder="00000000" min="8"
+                            max="8">
+                    </label>
+                    <label> Cantidad de personas que asistiran al evento:
+                        <input type="number" value="1" placeholder="Cantidad de personas" id="friends" required>
+                    </label>
+                    <label> Desea usar los datos para el registro a GaleArt?:
+                        <input type="checkbox" name="register" value="yes" id="login_question">
+                    </label>
+                    <input type="submit" value="Enviar" id="input_submit">
+                    <button class="btn_close" id="closeForm">cerrar</button>
+                    <p id="error"></p>
+                </form>
+            </dialog>
         </div>
     </main>
     <footer></footer>
