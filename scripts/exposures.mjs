@@ -1,3 +1,12 @@
+let dataProfile = JSON.parse(localStorage.getItem('name'));
+console.log(dataProfile);
+
+const contentLogin = document.getElementById('login');
+
+if(dataProfile){
+    contentLogin.textContent = dataProfile
+}
+
 const ListEvents = [
     {
         tittle: "Titulo 1",
@@ -35,7 +44,15 @@ const ListEvents = [
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
         date: "una fecha",
         href: "/pages/registro.html"
+    },
+    {
+        tittle: "Titulo 6",
+        img: "/assets/imgApple.jpg",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
+        date: "una fecha",
+        href: "/pages/registro.html"
     }
+
 
 ];
 

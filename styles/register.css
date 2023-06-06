@@ -15,11 +15,42 @@ main{
     
 }
 .toRegister{
-width: 100%;
-height: 70%;
-background-color: blueviolet;
-}
+width: 90%;
+height:600px;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 80% 20%;
+grid-row: 100%;
+border: 2px solid black;
 
+}
+.imgEvent{
+    width: 100%;
+    height:600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/2;
+  
+}
+.tittleAP{
+    grid-column: 2/2;
+    gap: 10px;
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+} 
+
+.tittleAP p{
+    font-size: 1.5em;
+}
+h3{
+    grid-column: 2/2;
+    gap: 10px;
+    border: 2px solid red;
+    
+}
 .btn_open{
     background-color: orange;
     width: 10%;
@@ -34,5 +65,22 @@ background-color: blueviolet;
     color: beige;
 }
 
+.formOpen{
+    width: 40%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.formOpen::backdrop{
+    background: rgba(151, 76, 26, 0.562);
+}
 
+.form_styles{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
 

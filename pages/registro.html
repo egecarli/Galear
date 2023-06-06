@@ -34,7 +34,7 @@
             <div class="toRegister" id="eventTarget"></div>
             <button class="btn_open" id="openForm">¡Quiero ir!</button>
             <dialog id="form_register" class="formOpen">
-                <form class="register_events" id="form_register">
+                <form method="dialog" class="form_styles" id="form_register">
                     <label>
                         <h2>Formulario de reserva, a continuación ingrese sus datos:</h2>
                     </label>
@@ -62,9 +62,9 @@
                         <input type="checkbox" name="register" value="yes" id="login_question">
                     </label>
                     <input type="submit" value="Enviar" id="input_submit">
-                    <button class="btn_close" id="closeForm">cerrar</button>
                     <p id="error"></p>
                 </form>
+                <button class="btn_close" id="closeForm">cerrar</button>
             </dialog>
         </div>
     </main>
