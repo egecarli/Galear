@@ -3,8 +3,8 @@ const eventTarget = document.getElementById('eventTarget');
 eventTarget.innerHTML = exposureSelect;
 
 const btn_openForm = document.getElementById('openForm');
-const btn_closeForm = document.getElementById('closeForm');
-const form_open = document.querySelector('#form_register')
+const btn_closeForm = document.querySelector('#closeForm');
+const openForm = document.querySelector('#form_register')
 
 const nameForm = document.getElementById('name');
 const lastNameForm = document.getElementById('lastName');
@@ -16,18 +16,19 @@ const conctacNumber = document.getElementById('contactNum')
 const formRegister = document.getElementById('form_register');
 const errorForm = document.getElementById('error')
 
+const contentLogin = document.getElementById('login');
+
 //validations
 
 formRegister.addEventListener('submit', (e) => {
-    e.preventDefault()
     let dataUser = []
-    let errorValidation = ""
-    let invalidIncome = false
-    let regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
-    let regexName = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/
-    let validName = regexName.test(nameForm.value);
-    let validLastName = regexName.test(lastNameForm.value);
-    let validEmail = regexEmail.test(emailForm.value);
+    const errorValidation = ""
+    const invalidIncome = false
+    const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+    const regexName = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/
+    const validName = regexName.test(nameForm.value);
+    const validLastName = regexName.test(lastNameForm.value);
+    const validEmail = regexEmail.test(emailForm.value);
     let numberContact = ""
     let validNumContact = false
     let validCodArea = false
@@ -82,13 +83,23 @@ formRegister.addEventListener('submit', (e) => {
     }
 
     if (registerAccept.checked && validName && validLastName && validEmail && validCodArea && validNumContact && numberOfPeople  ) {
-        
         localStorage.setItem('dataUser',JSON.stringify(dataUser));
-        console.log(dataUser)
-    } else {
-        console.log('no quiso el registro')
+        localStorage.setItem('name',JSON.stringify(dataUser[0]))
+        contentLogin.textContent = dataUser[0]
+    } else{
+        btn_openForm.textContent = "Estas inscripto"
     }
 })
 
 
+//modal
 
+btn_openForm.addEventListener('click',()=>{
+    openForm.showModal();
+})
+
+btn_closeForm.addEventListener('click',(e)=>{
+    openForm.close();
+})
+
+console.log(btn_openForm.textContent)
