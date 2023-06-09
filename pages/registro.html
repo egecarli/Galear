@@ -34,10 +34,8 @@
             <div class="toRegister" id="eventTarget"></div>
             <button class="btn_open" id="openForm">¡Quiero ir!</button>
             <dialog id="form_register" class="formOpen">
+                <h2>Formulario de reserva, a continuación ingrese sus datos:</h2>
                 <form method="dialog" class="form_styles" id="form_register">
-                    <label>
-                        <h2>Formulario de reserva, a continuación ingrese sus datos:</h2>
-                    </label>
                     <label> Nombre:
                         <input type="text" placeholder="Ingrese su nombre" title="El nombre es requerido" id="name"
                             required>
@@ -61,10 +59,16 @@
                     <label> Desea usar los datos para el registro a GaleArt?:
                         <input type="checkbox" name="register" value="yes" id="login_question">
                     </label>
-                    <input type="submit" value="Enviar" id="input_submit">
-                    <p id="error"></p>
+                    <label>
+                        <input type="submit" value="Enviar" id="input_submit" class="submit">
+                    </label>
+                    <label>
+                        <button class="btn_close" id="closeForm">cerrar</button>
+                    </label>
+                    <label>
+                        <p id="error"></p>
+                    </label>
                 </form>
-                <button class="btn_close" id="closeForm">cerrar</button>
             </dialog>
         </div>
     </main>
