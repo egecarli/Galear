@@ -27,33 +27,40 @@
     </header>
     <main>
         <section class="subbanner">
-            <h1 >Eventos</h1>
+            <h1>Eventos</h1>
         </section>
-    <div class="contain-exposures">
-            <section class="filters">
-                <input type="search" name="filters" id="searchFilter">
-                <select name="forDate" id="forDate">fechas
-                    <option value="semana">última semana</option>
-                    <option value="mes">último mes</option>
-                    <option value="sugerencias">Sugerencias</option>
-                </select>
-                <select name="forCategory" id="forCategory">Por categoría
-                    <option value="pinturas">Pinturas</option>
-                    <option value="esculturas">Esculturas</option>
-                    <option value="conceptual">Conceptual</option>
-                </select>
-            </section>
-            <div class="exposuresTest">
+        <div class="exposuresTest">
+            <div class="contain-exposures" id="filters">
+                <section class="filters">
+                    <input type="search" name="filters" id="searchFilter">
+                    <select name="forDate" id="forDate">fechas
+                        <option value="todos">Filtro por dias</option>
+                        <option value="semana" id="semana">última semana</option>
+                        <option value="mes" id="mes">último mes</option>
+                        <option value="sugerencias" id="sugerencias">Sugerencias</option>
+                    </select>
+                    <select name="forCategory" id="forCategory">Por categoría
+                        <option value="todo">Por categorias</option>
+                        <option value="pinturas" id="pinturas">Pinturas</option>
+                        <option value="esculturas" id="esculturas">Esculturas</option>
+                        <option value="conceptual" id="conceptual">Conceptual</option>
+                    </select>
+                </section>
+            </div>
+            <div id="forFilters">
                 <template id="templateEvents" class="eventsCards" style="display:none">
                     <article>
                         <div class="imgEvent"></div>
                         <div class="tittleAP">
-                        <a href="" class="tittleEvents">
-                        <h1></h1>
-                        </a>
-                        <p></p>
+                            <a href="" class="tittleEvents">
+                                <h1></h1>
+                            </a>
+                            <p></p>
                         </div>
+                        <div class="date">
                         <h3></h3>
+                        <h4></h4>
+                    </div>
                     </article>
                 </template>
             </div>

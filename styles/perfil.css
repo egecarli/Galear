@@ -7,13 +7,28 @@ font-family: 'Lato', sans-serif;
 font-family: 'Ledger', serif;
 font-family: 'Mulish', sans-serif;
 font-family: 'Poppins', sans-serif;
+https://images.unsplash.com/photo-1530100914167-73e7602b004c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80
+https://images.unsplash.com/photo-1618598498622-38a055d15041?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80
+https://images.unsplash.com/photo-1552250575-e508473b090f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80
 */
+
+:root{
+    --orangeBackground:rgba(245, 140, 17, 1);
+    --titles: rgba(21, 49, 63, 1);
+}
+
+body{
+    background-color: white;
+}
 
 main {
     width: 100%;
     height: 80%;
     margin-top: 50px;
 }
+
+
+
 
 .dataprofile {
     width: 100%;
@@ -26,9 +41,9 @@ main {
 }
 
 .profileEdit {
-    width: 80%;
+    width: 50%;
     height: 300px;
-    background-image: url(/assets/copiaImg.jpg);
+    background-image: url(/assets/invertido.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,5 +78,5 @@ main {
     font-weight:400;
 }
 .dataProfileUser h1{
-    color: gray;
+    color: var(--titles);
 }
