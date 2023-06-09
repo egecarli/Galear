@@ -21,11 +21,11 @@ const contentLogin = document.getElementById('login');
 //validations
 
 formRegister.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault()
     let dataUser = []
     let errorValidation = ""
     let invalidIncome = false
-    const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+    const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,4})$/
     const regexName = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/
     const validName = regexName.test(nameForm.value);
     const validLastName = regexName.test(lastNameForm.value);
@@ -82,13 +82,19 @@ formRegister.addEventListener('submit', (e) => {
     if (invalidIncome) {
         errorForm.innerHTML += errorValidation
     }
-
+    
+    if(validName && validLastName && validEmail && validCodArea && validNumContact && numberOfPeople){
+        openForm.close()
+    }
     if (registerAccept.checked && validName && validLastName && validEmail && validCodArea && validNumContact && numberOfPeople  ) {
         localStorage.setItem('dataUser',JSON.stringify(dataUser));
         localStorage.setItem('name',JSON.stringify(dataUser[0]))
         contentLogin.textContent = dataUser[0]
-        btn_openForm.textContent = "Estas inscripto"
-    }
+        btn_openForm.textContent = "Estas inscripto";
+        openForm.close()
+        
+     }
+
 })
 
 

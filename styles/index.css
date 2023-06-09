@@ -96,3 +96,9 @@ nav {
     background-position: left;
     background-size: contain;
 }
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--titles);
+}
