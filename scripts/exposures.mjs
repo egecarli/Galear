@@ -6,9 +6,9 @@ if (dataProfile) {
 
 const ListEvents = [
     {
-        tittle: "Titulo 1",
+        tittle: "Las bananas son verdes",
         img: "/assets/imgbananaAbstrac.jpg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus.",
         date: "Miercoles 19/7/2023",
         hora: "16:00hs",
         href: "/pages/registro.html",
@@ -16,7 +16,7 @@ const ListEvents = [
 
     },
     {
-        tittle: "Titulo 2",
+        tittle: "Carnaval",
         img: "/assets/imgcitycolors.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
         date: "Jueves 1/7/2023",
@@ -26,7 +26,7 @@ const ListEvents = [
 
     },
     {
-        tittle: "Titulo 3",
+        tittle: "Nimuymuy nitantan",
         img: "/assets/imgcolorsart.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
         date: "Miercoles 28/6/2023",
@@ -36,7 +36,7 @@ const ListEvents = [
 
     },
     {
-        tittle: "Titulo 4",
+        tittle: "Reflejivos",
         img: "/assets/imgintrospection.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
         date: "Jueves 6/7/2023",
@@ -46,7 +46,7 @@ const ListEvents = [
 
     },
     {
-        tittle: "Titulo 5",
+        tittle: "Extraño a Ace",
         img: "/assets/imgmaninfire.jpg",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
         date: "Sábado 10/6/2023",
@@ -55,9 +55,9 @@ const ListEvents = [
         class: 'semana pinturas',
     },
     {
-        tittle: "Titulo 6",
+        tittle: "Manzanas arenosas",
         img: "/assets/imgApple.jpg",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. Nam quisquam ullam suscipit laborum, excepturi eaque. Eveniet?",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dicta alias quae modi ad est,veniam cumque sint. Odio, quidem doloribus sit nostrum itaque delectus dolore pariatur magnamas periores voluptate? Omnis eveniet labore odit optio ullam doloremque ut vero repellendus necessitatibus. Praesentium dolore doloremque harum dignissimos quaerat maxime ex eligendi dolorem explicabo, odio autem, cumque modi quod debitis esse soluta! Minus nobis iure perspiciatis deleniti quae neque hic nesciunt et ad dicta dolores temporibus, vero molestias veniam sunt natus architecto necessitatibus ducimus. ",
         date: "Viernes 9/6/2023",
         hora: "16:00hs",
         href: "/pages/registro.html",
@@ -110,7 +110,6 @@ const mes = document.querySelectorAll('.mes');
 const semana = document.querySelectorAll('.semana');
 
 const filterCategory = document.getElementById('forCategory');
-console.log(filterCategory)
 
 filterDate.addEventListener('click', (event) => {
     if (event.target.value === 'mes') {

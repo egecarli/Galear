@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Josefin+Sans:wght@300;500&family=Lato:wght@300;400&family=Ledger&family=Mulish:wght@400;700;900&family=Poppins:wght@100;300&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Ledger', serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+:root{
+    --orangeBackground:rgba(245, 140, 17, 1);
+    --titles: rgba(21, 49, 63, 1);
+    --details:rgba(226, 159, 91, 1);
+    --exito:rgba(161, 73, 203, 1);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+
+}
+
+.artist_contain{
+    width: 100%;
+    
+}
+.slide_contain{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artistInfo{
+    width: 40%;
+    height: 90%;
+    border-radius: 500px;
+    box-shadow: -11px 5px 14px 6px rgba(77,70,70,0.5);
+-webkit-box-shadow: -11px 5px 14px 6px rgba(77,70,70,0.5);
+-moz-box-shadow: -11px 5px 14px 6px rgba(77,70,70,0.5);
+    
+
+}
+
+.backgroundImg{
+   background-image: url(https://images.unsplash.com/photo-1613206468203-fa00870edf79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
